@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(8, 8, 8);
+    height: 100%;
+}
+
+
+body {
+    min-height: 100%;
+}
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header    header  header  header"
+                         "navbar    navbar  navbar  navbar"
+                         "main      main    main    main"
+                         "footer    footer  footer  footer";
+}
+
+
+.contenedor header {
+    grid-area: header;
+    background-color: rgb(219, 103, 248);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header .logo {
+    padding-bottom: 15px;
+}
+
+
+h1 {
+    color: rgb(114, 32, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(219, 103, 248);
+}
+
+
+.contenedor .navbar {
+    grid-area: navbar;
+    background-color: rgb(212, 149, 228);
+    color: rgb(37, 35, 2);
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 5px;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+
+.insta {
+    padding-left: 105px;
+    padding-top: 70px;
+    width: 35px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(114, 32, 0);
+    font-size: 20px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+
+.contenedor main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.postres:hover{
+  transform: scale(1.2);
+
+}
+
+.tortas18:hover{
+    transform: scale(1.2);
+  
+  }
+
+.bombones:hover{
+    transform: scale(1.2);
+  
+  }
+
+
+.postres{
+    margin: 50px;
+    width: 150px;
+
+}
+
+
+.postres1 h2 {
+    color: tomato;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.tortas1 h2 {
+    color: tomato;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+.bombones1 h2 {
+    color: tomato;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.tortas18 {
+    margin: 50px;
+    width: 150px;
+}
+
+
+.bombones {
+    margin: 50px;
+    width: 150px;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: rgb(219, 149, 247);
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tortas01 {
+    margin: 50px;
+}
+
+
+.tortas01 h2 {
+    color: tomato;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.tortas2 h2 {
+    color: tomato;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.tortas3 h2 {
+    color: tomato;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.tortas2 {
+    margin: 50px;
+}
+
+
+.tortas3 {
+    margin: 50px;
+}
+
+
+.tortas3 .insta {
+    padding-left: 125px;
+    padding-top: 70px;
+    width: 35px;
+}
+
+
+.titulo h1 {
+    color: tomato;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
